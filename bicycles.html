@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/css/uikit.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
+	<script src="https://kit.fontawesome.com/a3aad2d743.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="CSS SCSS/main.css">
+	<title>Bicycles</title>
+</head>
+
+<body>
+	<header uk-scrollspy="uk-animation-slide-top" class="header">
+		<nav class="navbar navbar-expand-lg sticky-top navbar-default">
+			<div class="container-fluid">
+				<a class="navbar-brand d-flex align-content-center ms-2" href="index.html"><span
+						class="logoText">Kebic</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+					aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="burgerLine"></span>
+					<span class="burgerLine"></span>
+					<span class="burgerLine"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Main</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link active" href="bicycles.html">Bicycles</a>
+						</li>
+						<li class="nav-item">
+							<a href="accessories.html" class="nav-link">Accessories</a>
+						</li>
+						<li class="nav-item">
+							<button class="nav-button" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+						</li>
+					</ul>
+				</div>
+		</nav>
+		</div>
+
+		<div class="modal fade" tabindex="-1" id="signUpModal" data-bs-backdrop="static">
+			<div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="signUpForm">
+							<form action="">
+								<div class="modal-head">
+									<div class="empty"></div>
+									<h1 class="SignUpTitle"> Sign Up</h1>
+									<button class="btn-close" data-bs-dismiss="modal"></button>
+								</div>
+								<div class="form-floating">
+									<input type="text" name="firstName" id="firstName" placeholder="First Name"
+										class="form-control" required>
+									<label for="firstName" class="form-label">First Name</label>
+								</div>
+								<div class="form-floating">
+									<input type="text" name="lastName" id="lastName" placeholder="Last Name" class="form-control"
+										required>
+									<label for="lastName" class="form-label">Last Name</label>
+								</div>
+								<div class="form-floating">
+									<input type="email" name="email" id="email" placeholder="Email" class="form-control"
+										required>
+									<label for="email" class="form-label">Email</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" name="password" id="password"
+										placeholder="Password (Minimum 8 characters)" minlength="8" class="form-control" required>
+									<label for="password" class="form-label">Password</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" name="passwordConfirmation" id="passwordConfirmation"
+										placeholder="Confirm Password" class="form-control" required>
+									<label for="passwordConfirmation" class="form-label">Confirm Password</label>
+								</div>
+								<button type="submit" class="form-button">Submit</button>
+							</form>
+						</div>
+						<div class="modalSignUpImage">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="head">
+			<div class="opacity">
+				<h1 uk-scrollspy="uk-animation-slide-top" class="pageTitle">Bicycles</h1>
+				<p uk-scrollspy="uk-animation-slide-top" class="pageHeadText">Lorem, ipsum dolor sit amet consectetur
+					adipisicing elit. Vitae veniam incidunt aliquam vel consequuntur sit?</p>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic1.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">6KU URBAN TRACK BIKE</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price">$599.99</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product1">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic2.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">AVANTI MONTARI MS 3</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price">$899.99</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product2">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic3.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">MONTRA DOWNTOWN</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price"> <span class="line">$1199.99</span>
+					<span class="sale">$999.99</span>
+				</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product3">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic4.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">SCOUT 290 SPORT</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price">$799.99</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product4">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic5.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">SKID 24 D SE</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price">$649.99</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product5">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic6.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">SLR SEVEN 105</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price">$1249.99</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product6">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic7.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">HERCULES BRUT RF 26T</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price">$1999.99</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product7">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic8.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">EVELO AURORA G205</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price">$1049.99</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product8">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic9.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">AVANTI BFS 445</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price"> <span class="line">$1799.99</span>
+					<span class="sale">$1499.99</span>
+				</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product9">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="product-card">
+				<img src="./Images/productPic10.webp" alt="product picture" class="productImage">
+				<h3 uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productTitle">HILAND 29 SPECTRE</h3>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="price">$1299.99</p>
+				<button uk-scrollspy="uk-animation-slide-bottom; delay: 200" class="productLook" data-bs-toggle="modal"
+					data-bs-target="#product10">Add To Cart</button>
+			</div>
+		</div>
+		<div class="last-wrapper">
+			<div uk-scrollspy="uk-animation-slide-bottom" class="bgimage2">
+				<h1 uk-scrollspy="uk-animation-slide-bottom" class="goods">Three reasons why you should buy bicycles at our
+					store </h1>
+			</div>
+			<div class="goods-container">
+				<div uk-scrollspy="uk-animation-slide-left" class="good">
+					<h3 class="good-title">36 MONTH ASSURANCE</h3>
+					<p class="good-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium necessitatibus
+						perferendis similique quasi neque voluptas commodi officia. Cumque sequi veritatis, unde autem dolor
+						similique deleniti! Vitae facere hic accusamus tempora!</p>
+				</div>
+				<div uk-scrollspy="uk-animation-slide-bottom" class="good">
+					<h3 class="good-title">COOL BONUSES</h3>
+					<p class="good-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam animi, illo
+						molestias provident quis ut quidem itaque ipsa eaque maiores libero? In unde nisi voluptate. Amet quae
+						ipsam magni. Laudantium.</p>
+				</div>
+				<div uk-scrollspy="uk-animation-slide-right" class="good">
+					<h3 class="good-title">MONEY BACK QUARANTEE</h3>
+					<p class="good-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis vitae
+						voluptatibus officia consectetur consequatur provident exercitationem odio nihil nulla ipsa saepe quo
+						tempora ex laudantium, necessitatibus molestiae sed repellat!</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal  product-modal fade" tabindex="-1" id="product1" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic1.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">6KU URBAN TRACK BIKE</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$599.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product2" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic2.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">AVANTI MONTARI MS 3</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$899.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product3" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic3.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">MONTRA DOWNTOWN</h3>
+							<p class="modalProductText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+								consectetur!</p>
+							<p class="modalPrice"> <span class="line">$1199.99</span> <span class="sale">$999.99</span></p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product4" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic4.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">SCOUT 290 SPORT</h3>
+							<p class="modalProductText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+								consectetur!</p>
+							<p class="modalPrice">$799.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product5" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic5.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">SKID 24 D SE</h3>
+							<p class="modalProductText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+								consectetur!</p>
+							<p class="modalPrice">$649.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product6" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic6.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">SLR SEVEN 105</h3>
+							<p class="modalProductText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+								consectetur!</p>
+							<p class="modalPrice">$1249.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product7" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic7.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">HERCULES BRUT PLUS RF 26T</h3>
+							<p class="modalProductText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+								consectetur!</p>
+							<p class="modalPrice">$1999.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product8" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic8.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">EVELO AURORA G205</h3>
+							<p class="modalProductText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+								consectetur!</p>
+							<p class="modalPrice">$1049.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product9" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic9.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">AVANTI BFS 445</h3>
+							<p class="modalProductText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+								consectetur!</p>
+							<p class="modalPrice"> <span class="line">$1799.99</span> <span class="sale">$1499.99</span></p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="product10" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/productPic10.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">HILAND 29 SPECTRE</h3>
+							<p class="modalProductText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+								consectetur!</p>
+							<p class="modalPrice">$1299.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<p class="logoText"><a href="index.html" class="foorer-brand navbar-brand"> Kebic</a></p>
+			<p class="footer-text">© 2022</p>
+			<div class="icons">
+				<a href="https://www.facebook.com/profile.php?id=100013662106995" target=”_blank” class="social-link"><i
+						class="fab fa-facebook-f icon"></i></a>
+				<a href="https://twitter.com/Kelar24374635" target=”_blank” class="social-link"><i
+						class="fab fa-twitter icon"></i></a>
+				<a href="https://t.me/D_Kelar" target=”_blank” class="social-link"><i class="fa-brands fa-telegram"></i></a>
+				<a href="https://www.instagram.com/_.k_.l_.r_/" target=”_blank” class="social-link"><i
+						class="fa-brands fa-instagram"></i></a>
+			</div>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Products</h5>
+			<a href="#" class="footer-link">Product 1</a>
+			<a href="#" class="footer-link">Product 2</a>
+			<a href="#" class="footer-link">Product 3</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Useful links</h5>
+			<a href="#" class="footer-link">Your account</a>
+			<a href="#" class="footer-link">Become a member</a>
+			<a href="#" class="footer-link">Sales</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Contact</h5>
+			<a href="#" class="footer-link">Uzhgorod UA</a>
+			<a href="#" class="footer-link">info@example.com</a>
+			<a href="#" class="footer-link">+01 234 567 88</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="last">
+			<p class="copyright">Copyright 2022. Kebic. All Rights Reserved</p>
+		</div>
+	</footer>
+	<script defer src="./Javascript/script.js"></script>
+</body>
+
+</html>

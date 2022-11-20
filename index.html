@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/css/uikit.min.css" />
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
+	<script src="https://kit.fontawesome.com/a3aad2d743.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="CSS SCSS/main.css">
+	<title>Kebic</title>
+</head>
+
+<body>
+	<header uk-scrollspy="uk-animation-slide-top" class="header">
+		<nav class="navbar navbar-expand-lg navbar-default">
+			<div class="container-fluid">
+				<a class="navbar-brand d-flex align-content-center ms-2" href="index.html"><span
+						class="logoText">Kebic</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+					aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="burgerLine"></span>
+					<span class="burgerLine"></span>
+					<span class="burgerLine"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link active" href="index.html">Main</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="bicycles.html">Bicycles</a>
+						</li>
+						<li class="nav-item">
+							<a href="accessories.html" class="nav-link">Accessories</a>
+						</li>
+						<li class="nav-item">
+							<button class="nav-button" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+						</li>
+					</ul>
+				</div>
+		</nav>
+		</div>
+
+		<div class="modal fade" tabindex="-1" id="signUpModal" data-bs-backdrop="static">
+			<div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="signUpForm">
+							<form action="">
+								<div class="modal-head">
+									<div class="empty"></div>
+									<h1 class="SignUpTitle"> Sign Up</h1>
+									<button class="btn-close" data-bs-dismiss="modal"></button>
+								</div>
+								<div class="form-floating">
+									<input type="text" name="firstName" id="firstName" placeholder="First Name"
+										class="form-control" required>
+									<label for="firstName" class="form-label">First Name</label>
+								</div>
+								<div class="form-floating">
+									<input type="text" name="lastName" id="lastName" placeholder="Last Name" class="form-control"
+										required>
+									<label for="lastName" class="form-label">Last Name</label>
+								</div>
+								<div class="form-floating">
+									<input type="email" name="email" id="email" placeholder="Email" class="form-control"
+										required>
+									<label for="email" class="form-label">Email</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" name="password" id="password"
+										placeholder="Password (Minimum 8 characters)" minlength="8" class="form-control" required>
+									<label for="password" class="form-label">Password</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" name="passwordConfirmation" id="passwordConfirmation"
+										placeholder="Confirm Password" class="form-control" required>
+									<label for="passwordConfirmation" class="form-label">Confirm Password</label>
+								</div>
+								<button type="submit" class="form-button">Submit</button>
+							</form>
+						</div>
+						<div class="modalSignUpImage">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+		<div class="container-fluid  pb-2">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div uk-scrollspy="uk-animation-scale-up uk-transform-origin-bottom-left"
+					class="col-12 col-lg-6 order-1 order-lg-0 ps-3">
+					<h1 class="title mt-3">Welcome</h1>
+					<p class="text mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi assumenda ab quas
+						magni saepe. Minus, adipisci? Dignissimos excepturi incidunt corrupti fugit ea doloribus fuga autem
+						perferendis quam voluptatem ex, veniam hic minima quos dolores quidem rerum quasi laboriosam
+						voluptatum tempore. Omnis repellat libero modi, debitis quis unde minus at laborum, quia obcaecati ea
+						voluptatum. Itaque quam a illum commodi odit, dolore delectus magni eum dolores nostrum architecto at
+						non ex error recusandae perferendis accusantium excepturi eligendi voluptatibus tempore quidem
+						expedita laboriosam voluptates nisi? Et debitis incidunt ea, id porro distinctio tenetur ad,
+						temporibus amet suscipit facere eos commodi ex fugit!</p>
+				</div>
+				<div uk-scrollspy="uk-animation-scale-up uk-transform-origin-bottom-right" class="col-12 col-lg-5">
+					<img src="./Images/TitlePicture.webp" alt="Picture" class="autoimg">
+				</div>
+			</div>
+		</div>
+		<h1 uk-scrollspy="uk-animation-slide-bottom" class="Reason">Why You Should Choose Us</h1>
+
+		<div class="image-slider swiper">
+			<div class="image-slider__wrapper swiper-wrapper">
+				<div class="image-slider__slide swiper-slide">
+					<div class="content">
+						<img src="./Images/Slider-image2.webp" alt="Slider Image" class="slider-image">
+						<h2 class="slider-title">Great Bicycles Quality</h2>
+						<p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo harum maxime
+							facere delectus nam ea unde laudantium voluptates esse velit molestias, qui fuga, mollitia optio
+							cumque eos? Deleniti aliquam temporibus dolorem dicta ab veritatis, inventore suscipit quae! Atque
+							laborum odio laboriosam at magnam quo laudantium earum.</p>
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="content">
+						<img src="./Images/Slider-image1.webp" alt="Slider Image" class="slider-image">
+						<h2 class="slider-title">Big Assortment of Bikes</h2>
+						<p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo harum maxime
+							facere delectus nam ea unde laudantium voluptates esse velit molestias, qui fuga, mollitia optio
+							cumque eos? Deleniti aliquam temporibus dolorem dicta ab veritatis, inventore suscipit quae! Atque
+							laborum odio laboriosam at magnam quo laudantium earum.</p>
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="content">
+						<img src="./Images/Slider-image3.webp" alt="Slider Image" class="slider-image">
+						<h2 class="slider-title">Monthly Giweavays</h2>
+						<p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo harum maxime
+							facere delectus nam ea unde laudantium voluptates esse velit molestias, qui fuga, mollitia optio
+							cumque eos? Deleniti aliquam temporibus dolorem dicta ab veritatis, inventore suscipit quae! Atque
+							laborum odio laboriosam at magnam quo laudantium earum.</p>
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="content">
+						<img src="./Images/Slider-image4.webp" alt="Slider Image" class="slider-image">
+						<h2 class="slider-title">Great Amount Of Accessories</h2>
+						<p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo harum maxime
+							facere delectus nam ea unde laudantium voluptates esse velit molestias, qui fuga, mollitia optio
+							cumque eos? Deleniti aliquam temporibus dolorem dicta ab veritatis, inventore suscipit quae! Atque
+							laborum odio laboriosam at magnam quo laudantium earum.</p>
+					</div>
+				</div>
+				<div class="image-slider__slide swiper-slide">
+					<div class="content">
+						<img src="./Images/Slider-image5.webp" alt="Slider Image" class="slider-image">
+						<h2 class="slider-title">Free Shiping</h2>
+						<p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo harum maxime
+							facere delectus nam ea unde laudantium voluptates esse velit molestias, qui fuga, mollitia optio
+							cumque eos? Deleniti aliquam temporibus dolorem dicta ab veritatis, inventore suscipit quae! Atque
+							laborum odio laboriosam at magnam quo laudantium earum.</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<h1 class="title mt-3 w-100 center">About Us</h1>
+		<div class="container-fluid pb-2 bottom">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div uk-scrollspy="uk-animation-scale-up uk-transform-origin-bottom-right" class="col-12 col-lg-6">
+					<img src="./Images/blockPicture.webp" alt="Picture" class="autoimg">
+				</div>
+				<div uk-scrollspy="uk-animation-scale-up uk-transform-origin-bottom-left"
+					class="col-12 col-lg-5 order-1 order-lg-0 ps-3">
+					<p class="text mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi assumenda ab quas
+						magni saepe. Minus, adipisci? Dignissimos excepturi incidunt corrupti fugit ea doloribus fuga autem
+						perferendis quam voluptatem ex, veniam hic minima quos dolores quidem rerum quasi laboriosam
+						voluptatum tempore. Omnis repellat libero modi, debitis quis unde minus at laborum, quia obcaecati ea
+						voluptatum. Itaque quam a illum commodi odit, dolore delectus magni eum dolores nostrum architecto at
+						non ex error recusandae perferendis accusantium excepturi eligendi voluptatibus tempore quidem
+						expedita laboriosam voluptates nisi? Et debitis incidunt ea, id porro distinctio tenetur ad,
+						temporibus amet suscipit facere eos commodi ex fugit!</p>
+					<button class="block-button mt-5">Learn More</button>
+				</div>
+			</div>
+		</div>
+		</div>
+		<h1 class="title mt-3 w-100 center">Our Products</h1>
+		<div class="container-fluid  pb-2">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div uk-scrollspy="uk-animation-slide-left" class="col-12 col-lg-6 order-1 order-lg-0 ps-3">
+					<p class="text mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi assumenda ab quas
+						magni saepe. Minus, adipisci? Dignissimos excepturi incidunt corrupti fugit ea doloribus fuga autem
+						perferendis quam voluptatem ex, veniam hic minima quos dolores quidem rerum quasi laboriosam
+						voluptatum tempore. Omnis repellat libero modi, debitis quis unde minus at laborum, quia obcaecati ea
+						voluptatum. Itaque quam a illum commodi odit, dolore delectus magni eum dolores nostrum architecto at
+						non ex error recusandae perferendis accusantium excepturi eligendi voluptatibus tempore quidem
+						expedita laboriosam voluptates nisi? Et debitis incidunt ea, id porro distinctio tenetur ad,
+						temporibus amet suscipit facere eos commodi ex fugit!</p>
+					<button class="block-button mt-5">Learn More</button>
+				</div>
+				<div uk-scrollspy="uk-animation-slide-right" class="col-12 col-lg-5">
+					<img src="./Images/blockPicture2.webp" alt="Picture" class="autoimg">
+				</div>
+			</div>
+		</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<p class="logoText"><a href="index.html" class="foorer-brand navbar-brand"> Kebic</a></p>
+			<p class="footer-text">© 2022</p>
+			<div class="icons">
+				<a href="https://www.facebook.com/profile.php?id=100013662106995" target=”_blank” class="social-link"><i
+						class="fab fa-facebook-f icon"></i></a>
+				<a href="https://twitter.com/Kelar24374635" target=”_blank” class="social-link"><i
+						class="fab fa-twitter icon"></i></a>
+				<a href="https://t.me/D_Kelar" target=”_blank” class="social-link"><i class="fa-brands fa-telegram"></i></a>
+				<a href="https://www.instagram.com/_.k_.l_.r_/" target=”_blank” class="social-link"><i
+						class="fa-brands fa-instagram"></i></a>
+			</div>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Products</h5>
+			<a href="#" class="footer-link">Product 1</a>
+			<a href="#" class="footer-link">Product 2</a>
+			<a href="#" class="footer-link">Product 3</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Useful links</h5>
+			<a href="#" class="footer-link">Your account</a>
+			<a href="#" class="footer-link">Become a member</a>
+			<a href="#" class="footer-link">Sales</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Contact</h5>
+			<a href="#" class="footer-link">Uzhgorod UA</a>
+			<a href="#" class="footer-link">info@example.com</a>
+			<a href="#" class="footer-link">+01 234 567 88</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="last">
+			<p class="copyright">Copyright 2022. Kebic. All Rights Reserved</p>
+		</div>
+	</footer>
+	<script defer src="./Javascript/script.js"></script>
+</body>
+
+</html>

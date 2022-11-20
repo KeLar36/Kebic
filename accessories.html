@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/css/uikit.min.css" />
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
+	<script src="https://kit.fontawesome.com/a3aad2d743.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="CSS SCSS/main.css">
+	<title>Accessories</title>
+</head>
+
+<body>
+	<header uk-scrollspy="uk-animation-slide-top" class="header">
+		<nav class="navbar navbar-expand-lg navbar-default">
+			<div class="container-fluid">
+				<a class="navbar-brand d-flex align-content-center ms-2" href="index.html"><span
+						class="logoText">Kebic</span></a>
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
+					aria-expanded="true" aria-label="Toggle navigation">
+					<span class="burgerLine transform-u"></span>
+					<span class="burgerLine opacity"></span>
+					<span class="burgerLine transform-d"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="navbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Main</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="bicycles.html">Bicycles</a>
+						</li>
+						<li class="nav-item active">
+							<a href="accessories.html" class="nav-link active">Accessories</a>
+						</li>
+						<li class="nav-item">
+							<button class="nav-button" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+						</li>
+					</ul>
+				</div>
+		</nav>
+		</div>
+
+		<div class="modal fade" tabindex="-1" id="signUpModal" data-bs-backdrop="static">
+			<div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="signUpForm">
+							<form action="">
+								<div class="modal-head">
+									<div class="empty"></div>
+									<h1 class="SignUpTitle"> Sign Up</h1>
+									<button class="btn-close" data-bs-dismiss="modal"></button>
+								</div>
+								<div class="form-floating">
+									<input type="text" name="firstName" id="firstName" placeholder="First Name"
+										class="form-control" required>
+									<label for="firstName" class="form-label">First Name</label>
+								</div>
+								<div class="form-floating">
+									<input type="text" name="lastName" id="lastName" placeholder="Last Name" class="form-control"
+										required>
+									<label for="lastName" class="form-label">Last Name</label>
+								</div>
+								<div class="form-floating">
+									<input type="email" name="email" id="email" placeholder="Email" class="form-control"
+										required>
+									<label for="email" class="form-label">Email</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" name="password" id="password"
+										placeholder="Password (Minimum 8 characters)" minlength="8" class="form-control" required>
+									<label for="password" class="form-label">Password</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" name="passwordConfirmation" id="passwordConfirmation"
+										placeholder="Confirm Password" class="form-control" required>
+									<label for="passwordConfirmation" class="form-label">Confirm Password</label>
+								</div>
+								<button type="submit" class="form-button">Submit</button>
+							</form>
+						</div>
+						<div class="modalSignUpImage">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+		<h1 uk-scrollspy="uk-animation-slide-top" class="pageTitle dark big">Accessories</h1>
+		<p uk-scrollspy="uk-animation-slide-top" class="pageHeadText dark">Lorem, ipsum dolor sit amet consectetur
+			adipisicing elit. Vitae veniam incidunt aliquam vel consequuntur sit?</p>
+		</div>
+		<div class="accessory-wrapper">
+			<div uk-scrollspy="uk-animation-slide-left" class="accessory-card">
+				<img src="./Images/accessoryPic1.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">A.R.S. Lift saddle</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$29.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory1">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="accessory-card">
+				<img src="./Images/accessoryPic2.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Shiner 70 bike tail light</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$34.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory2">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-right" class="accessory-card">
+				<img src="./Images/accessoryPic3.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Dual Blaze 1500</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$49.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory3">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-scale-up uk-transform-origin-bottom-left" class="accessory-card">
+				<img src="./Images/accessoryPic4.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Handlebar Grips</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$19.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory4">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="accessory-card">
+				<img src="./Images/accessoryPic5.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Buddy bike bag bundle</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price"> <span class="line">$74.99</span>
+					<span class="sale">$64.99</span>
+				</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory5">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-scale-up uk-transform-origin-bottom-right" class="accessory-card">
+				<img src="./Images/accessoryPic6.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Black Zeppelin CO2</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$24.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory6">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-left" class="accessory-card">
+				<img src="./Images/accessoryPic7.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Tripper bicycle lock</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$29.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory7">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="accessory-card">
+				<img src="./Images/accessoryPic8.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Bicycle bottle handler</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$29.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory8">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-right" class="accessory-card">
+				<img src="./Images/accessoryPic9.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Bicycle bottle</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$14.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory9">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-scale-up uk-transform-origin-bottom-left" class="accessory-card">
+				<img src="./Images/accessoryPic10.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Bicycle floor air pump</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$24.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory10">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-slide-bottom" class="accessory-card">
+				<img src="./Images/accessoryPic11.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Bicycle fenders</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price"> <span class="line">$39.99</span>
+					<span class="sale">$34.99</span>
+				</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory11">Add To Cart</button>
+			</div>
+			<div uk-scrollspy="uk-animation-scale-up uk-transform-origin-bottom-right" class="accessory-card">
+				<img src="./Images/accessoryPic12.webp" alt="product picture" class="accessoryImage">
+				<h3 class="accessoryTitle">Bicycle mini-computer</h3>
+				<p class="accessoryText">Lorem ipsum dolor, sit
+					amet
+					consectetur adipisicing elit. Eaque praesentium quo
+					officiis fugiat possimus itaque?</p>
+				<p class="price">$49.99</p>
+				<button class="productLook" data-bs-toggle="modal" data-bs-target="#accessory12">Add To Cart</button>
+			</div>
+		</div>
+
+		<div class="last-wrapper low">
+			<h1 uk-scrollspy="uk-animation-slide-bottom" class="goods-2">Take a part at our giveaway!!! <br> You can win
+				bicycle of your choice!!! </h1>
+			<div class="goods-container">
+				<div uk-scrollspy="uk-animation-slide-left" class="good">
+					<h3 class="good-title">Buy a product from our store starting at $19.99</h3>
+					<p class="good-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium necessitatibus
+						perferendis similique quasi neque voluptas commodi officia. Cumque sequi veritatis, unde autem dolor
+						similique deleniti! Vitae facere hic accusamus tempora!</p>
+				</div>
+				<div uk-scrollspy="uk-animation-slide-bottom" class="good">
+					<h3 class="good-title">Take a screenshot of your purchase</h3>
+					<p class="good-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam animi, illo
+						molestias provident quis ut quidem itaque ipsa eaque maiores libero? In unde nisi voluptate. Amet quae
+						ipsam magni. Laudantium.</p>
+				</div>
+				<div uk-scrollspy="uk-animation-slide-right" class="good">
+					<h3 class="good-title">Send a screenshot on our mail info@example.com</h3>
+					<p class="good-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis vitae
+						voluptatibus officia consectetur consequatur provident exercitationem odio nihil nulla ipsa saepe quo
+						tempora ex laudantium, necessitatibus molestiae sed repellat!</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory1" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic1.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">A.R.S. Lift saddle</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$29.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory2" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic2.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Shiner 70 bike tail light</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$34.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory3" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic3.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Dual Blaze 1500</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$49.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory4" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic4.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Handlebar Grips</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$19.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory5" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic5.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Buddy bike bag bundle</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice"> <span class="line">$74.99</span> <span class="sale">$64.99</span></p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory6" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic6.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Black Zeppelin CO2</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$24.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory7" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic7.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Tripper bicycle lock</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$29.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory8" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic8.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Bicycle bottle handler</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$29.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory9" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic9.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Bicycle bottle</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$14.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory10" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic10.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Bicycle floor air pump</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$24.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory11" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic11.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Bicycle fenders</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice"> <span class="line">$39.99</span> <span class="sale">$34.99</span></p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal  product-modal fade" tabindex="-1" id="accessory12" data-bs-backdrop="static">
+			<div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-head">
+						<div class="empty"></div>
+						<h1 class="addToCart">Add to cart</h1>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modalProductImage">
+							<img src="./Images/accessoryPic12.webp" alt="Bicycle picture" class="productModalImageInfo">
+						</div>
+						<div class="modalProductInfo">
+							<h3 class="modalProductTitle">Bicycle mini-computer</h3>
+							<p class="modalProductText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+								praesentium quo
+								officiis fugiat possimus itaque?</p>
+							<p class="modalPrice">$49.99</p>
+							<button class="productAdd">Add to cart</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<p class="logoText"><a href="index.html" class="foorer-brand navbar-brand"> Kebic</a></p>
+			<p class="footer-text">© 2022</p>
+			<div class="icons">
+				<a href="https://www.facebook.com/profile.php?id=100013662106995" target=”_blank” class="social-link"><i
+						class="fab fa-facebook-f icon"></i></a>
+				<a href="https://twitter.com/Kelar24374635" target=”_blank” class="social-link"><i
+						class="fab fa-twitter icon"></i></a>
+				<a href="https://t.me/D_Kelar" target=”_blank” class="social-link"><i class="fa-brands fa-telegram"></i></a>
+				<a href="https://www.instagram.com/_.k_.l_.r_/" target=”_blank” class="social-link"><i
+						class="fa-brands fa-instagram"></i></a>
+			</div>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Products</h5>
+			<a href="#" class="footer-link">Product 1</a>
+			<a href="#" class="footer-link">Product 2</a>
+			<a href="#" class="footer-link">Product 3</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Useful links</h5>
+			<a href="#" class="footer-link">Your account</a>
+			<a href="#" class="footer-link">Become a member</a>
+			<a href="#" class="footer-link">Sales</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="footer-content">
+			<h5 class="footer-title">Contact</h5>
+			<a href="#" class="footer-link">Uzhgorod UA</a>
+			<a href="#" class="footer-link">info@example.com</a>
+			<a href="#" class="footer-link">+01 234 567 88</a>
+		</div>
+		<div uk-scrollspy="uk-animation-slide-bottom" class="last">
+			<p class="copyright">Copyright 2022. Kebic. All Rights Reserved</p>
+		</div>
+	</footer>
+	<script defer src="./Javascript/script.js"></script>
+</body>
+
+</html>
